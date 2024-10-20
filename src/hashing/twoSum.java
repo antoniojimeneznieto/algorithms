@@ -7,12 +7,12 @@ public class twoSum {
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        int[] result = solution(nums, target);
+        int[] result = twoSum(nums, target);
 
         System.out.println("Answer is: [" + result[0] + ", " + result[1] + "]");
     }
 
-    private static int[] solution(int[] nums, int target) {
+    private static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
